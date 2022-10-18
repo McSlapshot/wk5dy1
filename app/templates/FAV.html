@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Favorite Games</h1>
+
+<ol>
+    {% for g in names %}
+        {% if g == 'Dark Souls 3' %}
+
+            <li><strong>{{g}}</strong></li>
+        {% else %}
+        
+            <li>{{ g }}</li>
+
+        {% endif %}
+
+    {% endfor %}
+</ol>
+
+<a href="/">Home Page</a>
+
+{% endblock %}
